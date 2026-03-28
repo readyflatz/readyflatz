@@ -1,6 +1,6 @@
 {
   "name": "readyflatz",
-  "version": "5.0.0",
+  "version": "1.0.0",
   "description": "ReadyFlatz - Smart Property Matching Platform for Mumbai. Production v5.0 - Custom domain ready.",
   "type": "module",
   "scripts": {
