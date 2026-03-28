@@ -1,0 +1,8 @@
+# Static files - serve directly (no redirect)
+/sitemap.xml    /sitemap.xml    200
+/robots.txt     /robots.txt     200
+/manifest.json  /manifest.json  200
+/favicon.png    /favicon.png    200
+
+# SPA fallback - all other routes go to index.html
+/*    /index.html   200

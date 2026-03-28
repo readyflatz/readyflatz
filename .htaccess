@@ -1,0 +1,41 @@
+# Apache .htaccess Configuration for ReadyFlatz
+# Ensures sitemap.xml and robots.txt are served with correct Content-Type
+
+<IfModule mod_mime.c>
+  # Set correct Content-Type for XML files
+  AddType application/xml .xml
+  AddType text/xml .xml
+  
+  # Set correct Content-Type for text files
+  AddType text/plain .txt
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Set headers for sitemap.xml
+  <FilesMatch "sitemap\.xml$">
+    Header set Content-Type "application/xml; charset=utf-8"
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+  
+  # Set headers for robots.txt
+  <FilesMatch "robots\.txt$">
+    Header set Content-Type "text/plain; charset=utf-8"
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # Don't rewrite sitemap.xml and robots.txt
+  RewriteRule ^sitemap\.xml$ - [L]
+  RewriteRule ^robots\.txt$ - [L]
+  
+  # Don't rewrite files or directories
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # Rewrite everything else to index.html (SPA)
+  RewriteRule ^ index.html [L]
+</IfModule>

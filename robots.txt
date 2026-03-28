@@ -1,0 +1,195 @@
+# ReadyFlatz - Mumbai's Intelligent AI-Powered Property Matching Platform
+# Robots.txt - Comprehensive SEO Optimization v5.6.2
+# Last Updated: 2026-03-28
+
+# ============================================
+# PRIMARY SEARCH ENGINES - FULL ACCESS
+# ============================================
+
+# Google Bot - Full Access
+User-agent: Googlebot
+Allow: /
+Allow: /property/
+Allow: /locations/
+Allow: /search
+Allow: /compare
+Allow: /about
+Allow: /contact
+Allow: /blogs/
+Allow: /discovery
+Disallow: /admin
+Disallow: /broker
+Disallow: /user
+Disallow: /login
+Disallow: /register
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*utm_source=
+Disallow: /*?*utm_medium=
+Disallow: /*?*utm_campaign=
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+Crawl-delay: 0
+
+# Google Image Bot - Full Image Access
+User-agent: Googlebot-Image
+Allow: /
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+Crawl-delay: 0
+
+# Google Mobile Bot - Full Mobile Access
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 0
+
+# Bing Bot - Full Access
+User-agent: Bingbot
+Allow: /
+Allow: /property/
+Allow: /locations/
+Allow: /search
+Allow: /compare
+Allow: /about
+Allow: /contact
+Allow: /blogs/
+Allow: /discovery
+Disallow: /admin
+Disallow: /broker
+Disallow: /user
+Disallow: /login
+Disallow: /register
+Disallow: /api/
+Crawl-delay: 1
+
+# Yahoo Slurp - Full Access
+User-agent: Slurp
+Allow: /
+Disallow: /admin
+Disallow: /broker
+Disallow: /user
+Disallow: /login
+Disallow: /register
+Disallow: /api/
+Crawl-delay: 1
+
+# DuckDuckGo Bot - Full Access
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /admin
+Disallow: /broker
+Disallow: /user
+Disallow: /login
+Disallow: /register
+Disallow: /api/
+Crawl-delay: 1
+
+# Yandex Bot - Full Access
+User-agent: YandexBot
+Allow: /
+Disallow: /admin
+Disallow: /broker
+Disallow: /user
+Disallow: /login
+Disallow: /register
+Disallow: /api/
+Crawl-delay: 1
+
+# ============================================
+# ALL OTHER BOTS - DEFAULT RULES
+# ============================================
+
+User-agent: *
+Allow: /
+Allow: /property/
+Allow: /locations/
+Allow: /search
+Allow: /compare
+Allow: /about
+Allow: /contact
+Allow: /blogs/
+Allow: /discovery
+
+# Disallow private areas
+Disallow: /admin
+Disallow: /broker
+Disallow: /user
+Disallow: /login
+Disallow: /register
+Disallow: /api/
+Disallow: /*.json$
+
+# Disallow tracking parameters
+Disallow: /*?*utm_source=
+Disallow: /*?*utm_medium=
+Disallow: /*?*utm_campaign=
+Disallow: /*?*utm_content=
+Disallow: /*?*utm_term=
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+Disallow: /*?*msclkid=
+Disallow: /*?*ref=
+Disallow: /*?*source=
+
+# ============================================
+# BLOCK BAD BOTS & SCRAPERS
+# ============================================
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+# ============================================
+# SITEMAP LOCATION
+# ============================================
+
+Sitemap: https://readyflatz.com/sitemap.xml
+
+# ============================================
+# CONTACT & SUPPORT
+# ============================================
+
+# Website: https://readyflatz.com
+# Contact: contact@readyflatz.com
+# Support: WhatsApp +91-7304343949
+# Last Updated: 2026-03-28
+# Version: 5.6.2 - Comprehensive Technical SEO Optimization with RealEstatePlatform Schema
